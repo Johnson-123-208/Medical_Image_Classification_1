@@ -1,5 +1,3 @@
-You're right! Here's **everything you need** — the complete content of both `README.md` and `requirements.txt` in **one single block** so you can just copy and paste into your file directly:
-
 ---
 
 ```markdown
@@ -26,15 +24,15 @@ This is a **real-time Pneumonia Detection web app** built using **TensorFlow**, 
 
 ## 🌟 Features
 
-| Feature                  | Description                                             |
-|-------------------------|---------------------------------------------------------|
-| 🧠 Deep Learning Model   | CNN trained on chest X-ray images                       |
-| 📤 Upload Image         | Upload `.jpg`, `.jpeg`, or `.png` images                |
-| 🔍 Predict Pneumonia     | Classify as **Pneumonia** or **Normal**                |
-| 🎙️ Voice Output          | Speaks prediction aloud                                 |
-| 🎨 Theme Switcher        | Toggle between Light, Dark, Red, Purple themes          |
-| 🌀 Particles Background  | Animated and responsive background effect               |
-| 🖼️ Lottie Animations    | Engaging visuals for scanner and result display         |
+| Feature                 | Description                                            |
+--------------------------------------------------------------------------------------
+| 🧠 Deep Learning Model  | CNN trained on chest X-ray images                      |
+| 📤 Upload Image         | Upload `.jpg`, `.jpeg`, or `.png` images               |
+| 🔍 Predict Pneumonia    | Classify as **Pneumonia** or **Normal**                |
+| 🎙️ Voice Output         | Speaks prediction aloud                                |
+| 🎨 Theme Switcher       | Toggle between Light, Dark, Red, Purple themes         |
+| 🌀 Particles Background | Animated and responsive background effect              |
+| 🖼️ Lottie Animations    | Engaging visuals for scanner and result display        |
 
 ---
 
@@ -52,9 +50,7 @@ Medical_Image_Classification/
 ---
 
 ## ⚙️ Installation
-
 1. **Clone this repository**
-
 ```bash
 git clone https://github.com/your-username/medical-image-classification
 cd medical-image-classification
@@ -85,7 +81,6 @@ streamlit run app.py
 ---
 
 ## 🧠 Model Details
-
 - Model: **Convolutional Neural Network (CNN)**
 - Framework: **TensorFlow / Keras**
 - Dataset: [Chest X-ray Pneumonia (Kaggle)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
@@ -95,7 +90,6 @@ streamlit run app.py
 ---
 
 ## 📦 `requirements.txt`
-
 ```
 streamlit
 tensorflow
@@ -128,11 +122,5 @@ pygame
 ## 🛡️ Disclaimer
 
 > This application is for **educational purposes only**. It is not intended for real-world medical diagnosis. Please consult a medical professional for accurate healthcare advice.
-
----
-
-💬 **Questions or Feedback?**  
-Feel free to reach out or raise an issue if you'd like to contribute or suggest improvements!
-```
 
 ---
