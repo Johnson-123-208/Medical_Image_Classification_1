@@ -90,12 +90,15 @@ streamlit run app.py
 ```
 streamlit
 tensorflow
-numpy
+matplotlib
+pandas
+python-dotenv
+kaggle
 pillow
-streamlit-lottie
+numpy
 requests
-gTTS
-pygame
+streamlit-lottie
+pyttsx3
 ```
 
 ---
