@@ -1,108 +1,99 @@
-# Medical_Image_Classification_1
-# 🧠 Medical Image Classification - Pneumonia Detection
+🩺 Pneumonia Detection from Chest X-ray
+Powered by Deep Learning and Streamlit
+Developed with ❤️ by Johnson Obhalloju
 
-This project uses a Convolutional Neural Network (CNN) to detect **Pneumonia** from chest X-ray images. Built in Python with TensorFlow/Keras, it automates dataset download from **Kaggle**, trains a CNN model, and can be easily extended for deployment or experimentation.
+🚀 About the Project
+This is a real-time Pneumonia Detection web app built using TensorFlow, Streamlit, and deep learning techniques. The app predicts whether a chest X-ray shows signs of Pneumonia or Normal lungs using a trained Convolutional Neural Network (CNN) model.
 
----
+It includes:
 
-## 🚀 Features
+🎨 Animated, full-screen UI with vibrant theme switching (Light, Dark, Red, Purple)
 
-- 🧠 CNN model for early disease detection  
-- 📦 Auto-downloads dataset via Kaggle API  
-- 📊 Performance metrics and visualizations  
-- 🎨 Clean modular code (VSCode-friendly)  
-- 💻 Ready for deployment & GitHub integration  
+💬 Voice output for predictions
 
----
+✨ Background particles animation
 
-## 📊 Dataset
+🔮 Lottie animations for interactive visuals
 
-We're using the [Chest X-ray Pneumonia dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) from Kaggle. It contains images of normal and pneumonia-affected lungs, categorized into training, testing, and validation folders.
+📸 X-ray image uploader with live prediction
 
-Due to GitHub's size limits, the dataset is **not included in this repo**. But no worries — it will be automatically downloaded when you run the training script!
+✅ Fully responsive and stylish interface
 
----
+🌟 Features
+Feature	Description
+🧠 Deep Learning Model	CNN trained on chest X-ray images
+🖼️ Upload X-ray Image	Upload .jpg, .png, or .jpeg image
+🎯 Predict Pneumonia	Get prediction with confidence score
+🎙️ Voice Output	App reads out the prediction using text-to-speech
+🌈 Theme Toggle	Light, Dark, Red, and Purple themes
+🌀 Background Animation	Beautiful interactive particles background
+🔁 Real-time Feedback	Lottie animations for scanning and result visuals
+📁 Folder Structure
+bash
+Copy
+Edit
+Medical_Image_Classification/
+├── app.py                  # Main Streamlit app
+├── model/
+│   └── medical_cnn.h5      # Trained CNN model
+├── data/
+│   └── (optional dataset for local training/testing)
+├── utils/
+│   └── helpers.py 
+├── requirements.txt
+└── README.md
+⚙️ Installation
+Clone the repo
 
-## 🔧 Setup Instructions
-
-### 1️⃣ Clone the Repo
-
-```bash
-git clone https://github.com/<your-username>/medical-image-classification.git
+bash
+Copy
+Edit
+git clone https://github.com/your-username/medical-image-classification
 cd medical-image-classification
-2️⃣ Install Dependencies
+Install dependencies
+
 bash
 Copy
 Edit
 pip install -r requirements.txt
-3️⃣ Setup Kaggle API
-Go to your Kaggle Account Settings.
+Run the app
 
-Click Create New API Token – this downloads kaggle.json.
-
-Place kaggle.json in this path:
-
-makefile
-Copy
-Edit
-Windows:    C:\Users\<YourUsername>\.kaggle\kaggle.json  
-Linux/Mac:  ~/.kaggle/kaggle.json
-✅ Make sure the file is named exactly kaggle.json.
-
-🏁 Run the Training Script
 bash
 Copy
 Edit
-python model/train_model.py
-This will:
+streamlit run app.py
+📷 How to Use
+Upload a chest X-ray image.
 
-🔁 Check if dataset is present
+Click "Predict".
 
-⬇️ If not, download it from Kaggle automatically
+Listen to the voice output and view prediction result (Pneumonia / Normal).
 
-🧠 Train the CNN model on the dataset
+Try switching between themes from the top-right 🎨 selector.
 
-📈 Print metrics and save model outputs
+🧠 Model Info
+Trained using Keras + TensorFlow.
 
-📁 Project Structure
-bash
-Copy
-Edit
-medical-image-classification/
-│
-├── data/                  # (Auto-created) Dataset download folder
-├── model/
-│   └── train_model.py     # Main training script
-├── utils/
-│   └── helpers.py         # Helper functions (e.g., Kaggle dataset download)
-├── .gitignore             # Ignores data/ and kaggle.json
-└── README.md              # You're here!
-🔒 .gitignore
-Make sure your .gitignore includes:
+Dataset used: Chest X-ray Images (Pneumonia).
 
-graphql
-Copy
-Edit
-# Dataset and API key
-data/
-.kaggle/
-📬 Credits
-Dataset by Paul Timothy Mooney
+Input shape: (150, 150, 3) — RGB resized images.
 
-Built with ❤️ using TensorFlow & Python
+Binary classification: Pneumonia vs Normal.
 
-🧠 Future Plans
-🔬 Model accuracy boosting
+💡 Future Enhancements
+Webcam-based real-time detection
 
-📱 Web interface (Streamlit or Flask)
+Integration with hospital data systems
 
-🌐 Deploy model to the cloud
+Extended support for other lung diseases
 
-📎 License
-Open source under MIT License.
+🙌 Credits
+Lottie Animations from LottieFiles
 
-yaml
-Copy
-Edit
+Dataset from Kaggle
 
----
+UI design inspired by modern dashboard styles
+
+🛡️ Disclaimer
+This tool is for educational and demonstration purposes only. It is not a replacement for professional medical diagnosis. Always consult with certified radiologists or doctors for medical advice.
+
