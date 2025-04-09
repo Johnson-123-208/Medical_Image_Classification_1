@@ -1,6 +1,3 @@
----
-
-```markdown
 # 🩺 Pneumonia Detection from Chest X-ray  
 ### Powered by Deep Learning and Streamlit  
 > Developed with ❤️ by **Johnson Obhalloju**
